@@ -5,7 +5,7 @@ author_name:        "Guilherme de Oliveira" # change this to your name
 logo_url:           https://avatars.githubusercontent.com/u/5924123?v=4 # Get it from GitHub API: https://api.github.com/users/<username>
 
 # Site Settings
-url:                https://gueepo.me # main url
+url:                http://gueepo.me # main url
 baseurl:            /cppmeditations
 permalink:          /:title # Post permalink
 timezone:           America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
