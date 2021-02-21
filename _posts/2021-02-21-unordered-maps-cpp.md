@@ -27,7 +27,7 @@ AnimationClip* GetAnimationClip(std::string ClipID) {
 }
 ```
 
-And finally, to play an animation I just have a pointer to the current animation being played, and there's where all the logic and sprites come from: `m_CurrentAnimation = m_AnimationList[AnimationName]`.
+And finally, to play an animation I just have a pointer to the current animation being played, and that's where all the logic and sprites come from: `m_CurrentAnimation = m_AnimationList[AnimationName]`.
 
 ![run animation]({{site.baseurl}}/assets/r2d_runanimation2.gif)
 
