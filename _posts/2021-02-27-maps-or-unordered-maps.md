@@ -25,7 +25,7 @@ Average constant-time complexity? I like that!
 
 Digging deeper, what exactly is the cost of accessing an element? (i.e. `std::unordered_map<Key,T,Hash,KeyEqual,Allocator>::operator[]`) and what we find is: `Average case: constant, worst case: linear in size.`
 
-Interesting. So the next question is, *What* is the worst-case? It seems that the worst case happens when you try to access a key that is not on the map, which results in an insertion. The documentation is kind enough to recommend us to look at the function `at()`, which throw an exception when the key is not found. Yikes.
+Interesting. So the next question is, *What* is the worst-case? It seems that the worst case happens when you try to access a key that is not on the map, which results in an insertion. The documentation is kind enough to recommend us to look at the function `at()`, which throws an exception when the key is not found. Yikes.
 
 Now here is the engine design question of the day: If we use `operator[]` and the game tries to play an animation that doesn't exist, what happens? A new "Animation" will be created (and that's not what we want) and we won't know that animation didn't exist! (and that's not what we want!) - But I guess this is a problem for future me, unordered maps sounds good for me now.
 
@@ -37,5 +37,5 @@ So how do we change from a map to an unordered map? Well, they were both designe
 
 ![run animation]({{site.baseurl}}/assets/r2d_runanimation2.gif)
 
-Follow me on [twitter](https://twitter.com/guilhermepo2)!!.
+Follow me on [twitter](https://twitter.com/guilhermepo2)!!
 
