@@ -13,13 +13,13 @@ Now the question is: How to add and retrieve content from the map?
 
 Luckily, adding something to a `std::map` is as simple as a function call.
 
-```
+```cpp
 void AddAnimationClip(std::string AnimationName, AnimationClip* Clip) { m_AnimationList.emplace(AnimationName, Clip); }
 ```
 
 And here's how I retrieve a specific Animation Clip:
 
-```
+```cpp
 AnimationClip* GetAnimationClip(std::string ClipID) {
 	if (m_AnimationList.count(ClipID) != 0) {
 		return m_AnimationList[ClipID];
